@@ -12,7 +12,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class LearnLocators {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		WebDriver driver;
 
