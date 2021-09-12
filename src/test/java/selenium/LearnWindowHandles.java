@@ -41,7 +41,7 @@ public class LearnWindowHandles {
 			System.out.println(driver.getTitle());
 		}
 			
-		driver.switchTo().defaultContent();
+		driver.switchTo().window(currrentWindow);
 		
 		
 		/*
