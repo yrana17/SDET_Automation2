@@ -1,0 +1,342 @@
+####################################################################################################################
+#05-09-2021
+####################################################################################################################
+#Selenium
+#Types of Selenium Tools
+#Webdriver
+#Get, Navigate, Maximize, close,Refresh
+#WebElement, WebElements
+#Locators
+####################################################################################################################
+
+Suite of Tools.
+Free Open Source
+Only support web application automation.
+Support multiple languages like python, java, C#, ruby.
+Cross Platform 
+Cross Browser Testing
+
+
+IDE : Firefox plugin that support record and playback feature but only used for small level projects.
+
+RC : Remote Webdriver - we execute our tests on remote machines.
+
+Grid : Run parallel tests across diff machines and diff browsers at same time.
+Hub and nodes concept.
+
+
+WebDriver*********
+Interface that support multiple browsers.
+
+1.launch Browser:
+System.setproperty to configure our browser driver path
+Webdriver driver = new ChormeDriver();
+
+2.Get Method for opening particular application.
+
+3.Maximize
+driver.manage().window().maximize();
+
+4.Navigate
+Navigate is also used for opening appplication.
+Backward
+Forward
+Refresh
+
+5.Close
+To close current driver browser instance
+
+6.Locators
+name
+id
+xpath
+partiallinktext
+linktext
+classname
+cssselector =>    Id= #   class= .
+input#txtUsername
+input.button
+
+
+7.FindElement vs FindElements
+to get single element. WebElement
+to fetch multiple elements. List<WebElement>
+
+
+WAP to naviagte  to https://opensource-demo.orangehrmlive.com/
+Read the text and href links for all links present
+Login to Application with correct credentials
+and read its title
+
+
+####################################################################################################################
+#11-09-2021
+####################################################################################################################
+#Locators
+#Waits - Implicitly, Explicitly, Fluent
+#contains
+#starts-with
+#close vs Quit
+#Open app in new tab
+#window handles
+#Highlight Elements using JavaScriptExecutor
+#Actions CLass - Mouse Hover, Drag & Drop, Double Click,
+#Context Click,Build & Perform, KeyBoard Actions
+####################################################################################################################
+
+WAP to open https://opensource-demo.orangehrmlive.com/ and automate all possible scenarios for login
+functionality.
+
+
+//*[@id='spanMessage'] 
+
+1.getText()
+2.getAttribute("name/id/class")
+
+3.Starts-With
+//input[starts-with(@id,'txt')]
+
+4.WAITS
+
+4.1.Implicit Wait
+It will continuously poll.
+
+4.2.Explicit Wait
+Exception in thread "main" org.openqa.selenium.TimeoutException: Expected condition failed: 
+waiting for visibility of element located by By.id: txtUserName1 (tried for 20 second(s) with 500 milliseconds interval)
+
+4.3.Fluent Wait
+Exception in thread "main" org.openqa.selenium.TimeoutException: Expected condition failed: 
+waiting for visibility of element located by By.id: txtUserName1 (tried for 10 second(s) with 2000 milliseconds interval)
+
+WAP to find list of all links after you login into Application and print them.
+
+
+5.Contains
+//span[contains(text(),'My')]
+
+
+6.Javascript Executor
+Its an interface that is used to execute javascript with selenium.
+
+7.Close vs Quit
+Close close the current window on which you have current control or active window
+Quie closes all the opened windows associated with driver.
+
+8.Window Handles 
+getWindowHandle for current window
+getWindowHandles for list of opened windows
+
+WAP to open 3 to 4 applications in multiple tabs and print their respective titles and url
+by switching them one by one and closing all except parent one.
+
+9.Highlight Elements
+js.executeScript("arguments[0]. setAttribute('style', 'border:2px solid red; background:yellow')", we);
+
+
+10.Actions Class
+It is for simulating Mouse and Keyboard Actions.
+
+
+MoveToELement : Mouse Hovering
+Build - Compiling multiple actions
+Perform - Execution
+
+DragAndDrop
+DoubleClick
+Context Click - Right CLick
+
+Keyboard Events
+CTRL+A
+CTRL+C
+TAB
+CTRL+V
+####################################################################################################################
+
+
+
+####################################################################################################################
+####################################################################################################################
+#12-09-2021
+####################################################################################################################
+#Select CLass
+#isEnabled, isDisplayed, isSelected
+#Screenshots
+#Alerts
+#Frames
+#Table Handling
+#CheckBox
+#CrossBrowser Testing
+#BrokenLink
+####################################################################################################################
+
+Select Dropdown
+Its basically a select class to handle action events on Select DropDown.
+
+isMultiple() -> to check if multiple options can be selected at once
+Below Methods to select value.
+sel.selectByIndex(1);
+sel.selectByValue("2");
+sel.selectByVisibleText("Orange");
+To check selected value and retrieve its text.
+sel.getFirstSelectedOption().getText()
+
+
+WAP to navigate to https://devlabs-860f0.web.app/dropdown and perform following operations.
+Select fruit as Mango
+Select life as Good
+Daily routine as LetCode
+Country as Australia and Germany and get text from field at end
+
+
+Table Handling
+
+/thead/tr/th[0/1]
+/tbody/tr[n]/td[k]
+
+isSelected()
+
+
+Take Screenshots
+
+TakesScreenshot srcShot = ((TakesScreenshot)driver);
+File Src=srcShot.getScreenshotAs(OutputType.FILE);	
+FileUtils.copyFile(Src, new File("Table.png"));
+
+
+isDisplayed()
+System.out.println(driver.findElement(By.id("noEdit")).isDisplayed());
+
+isEnabled()
+System.out.println(driver.findElement(By.id("noEdit")).isEnabled());
+
+
+Alert
+small msg box to get confirmation, provide informational msg,prompting you to enter some data
+Exception in thread "main" org.openqa.selenium.NoAlertPresentException: no such alert
+accept()
+dismiss()
+sendkeys()
+
+
+Frames
+WebPage or inline frame (Html Page inside another html page).
+iframe Tags to identify if page contains frame
+
+driver.switchTo().frame(name/id);
+driver.switchTo().parentFrame();
+
+Cross Browser Testing
+Testing your code with multiple browser to check the stability, compatability and functionalities.
+
+
+BrokenLink
+Its actually to validate that the links present on webpage are reachable or not.
+Scenario: To check if all links are accessible or not.
+
+
+####################################################################################################################
+####################################################################################################################
+####################################################################################################################
+#18-09-2021
+####################################################################################################################
+#POM
+#Page Factory
+#Properties File
+#Date Picker
+#Excel File Handling - Read,Write,Update,Count of Rows,Sheet,Columns
+####################################################################################################################
+
+POM is page object model.
+Design pattern that basically creates repository for the page objects.
+Advantages-
+COde Reusability
+maintainance will be easier
+easy to ehhance and modify
+test cases are separated from repository
+
+
+Page Factory is inbuilt page object model in selenium.
+@FindBy is normal locator to identify element
+@FindBys - AND 
+@FinaAll - OR
+
+
+Properties FIle
+Config Details like database config,unix server details, urls
+.properties
+key=value
+
+Env_SIT.properties
+Env_ST.properties
+Env_UAT.properties
+
+
+Date Picker
+WAP to select 11/15/1990 date from Date Picker.
+
+
+Excel Handling
+
+<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.16</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.16</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>2.6.0</version>
+		</dependency>
+Read'
+Write
+Update
+Counts of Rows, Cols, Sheets
+
+
+
+####################################################################################################################
+####################################################################################################################
+####################################################################################################################
+#18-09-2021
+####################################################################################################################
+#Case Study
+#Reporting
+####################################################################################################################
+1.Insert Data into Excel Sheet Manually to feed into UI , search inputs, file locations & Url, Credentials into 
+Properties file.
+2.Read Data from Excel Sheet and store it in Collection
+3.Login to https://opensource-demo.orangehrmlive.com/index.php/auth/login
+4.Go to Admin > Organization > General information
+Read All Data and Store it into COllection and write into Excel Sheet with Heading
+Same time take Screenshots and save it in folder with descriptive name
+5.Go to Admin > Organization > Locations > Search By City Name
+Read All Data and Store it into COllection and write into Excel Sheet with Heading
+Same time take Screenshots and save it in folder with descriptive name
+
+
+
+Reporting
+Health Report for our execution
+
+Extent Reporting
+
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.0.5</version>
+		</dependency>
+
+ExtentSparkReporter - for Configuration of report
+ExtenReport
+ExtentTest  - Test & Nodes
+MediaEntityBuilder.createScreenCapture for screenshot attachment
+
+####################################################################################################################
