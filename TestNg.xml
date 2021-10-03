@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+	<!-- <test thread-count="5" name="Smoke Test1">
+		<classes>
+			<class name="testng.BasicTags" />
+			<class name="testng.LearnAssertions" />
+		</classes>
+	</test> Test
+	<test thread-count="5" name="Smoke Test2">
+		<classes>
+			<class name="testng.BasicTags" />
+			<class name="testng.LearnDp" />
+		</classes>
+	</test> Test
+
+	<test name="Testing Parametrs">
+		<parameter name="uid" value="SDET_USER"></parameter>
+		<parameter name="pswd" value="SDET@123"></parameter>
+		<classes>
+			<class name="testng.LearnParameters"></class>
+		</classes>
+	</test> -->
+
+
+	<test name="Testing Groups">
+		<groups>
+			<run>
+				<exclude name="Smoke"></exclude>
+				<include name="Smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="testng.LearnGroups"></class>
+		</classes>
+	</test>
+
+
+
+</suite> <!-- Suite -->

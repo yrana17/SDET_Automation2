@@ -340,3 +340,75 @@ ExtentTest  - Test & Nodes
 MediaEntityBuilder.createScreenCapture for screenshot attachment
 
 ####################################################################################################################
+####################################################################################################################
+#TESTNG
+#Basic Tags
+#DataProvider, DataProviderClass, Groups
+#DependsOnMethods,Invocation, Timeouts vs InvocationTimeout
+#Priority, Description, Parameters
+#Enabled,AlwaysRun, Skip Test
+####################################################################################################################
+
+TestNg is Test Next Generation. 
+Provide full control over test cases/scenarios.
+support multiple test data execution
+we can handle pre requisite and post execution conditions as per requirement.
+
+Test Cases  ->  TestNG    ->  Execution   -> Genearte Reports
+Easy to use and learn.
+Annotations is key.
+Categorisation
+Parallel Execution.
+Listeners Support.
+
+
+
+
+
+@TEst: My Test Case
+@Before/After Test Suite  : Before and After All The Test Cases within that suite
+@Before Test vs Before Method
+
+
+Before Test Suite  >   Before  Test   > Before Class   >   Before  Method    >  Test Cases  1    > After Method 
+>  Before Method   >    Test Case 2  > After Method  >  After Class  > After Test   > After Test Suite
+
+
+Suite :  Smoke Test Suite
+
+
+TESTCAses - 1 to 10
+
+
+Assertions - checkpoints/conditions like if else
+
+Hard Assertions will stop execution for remainiing step in that particular test
+Soft Assertion will not stop execution
+
+
+Priority Attribute -
+Default Execution order is Alphabetically Increasing Order
+Priority=0 is having highest priority
+
+
+TimeOut attribute is to enable timebound execution.
+
+Enabled=false means do not execute this particular test case.
+
+
+Invocation Timeout vs Timeout 
+timeout is max no of milliseconds for each invocation of test and invocationtimeout is 
+max no of msec for all invocations together
+
+DataProvider is to execute same test with multiple set of test data.
+
+Groups
+DependsOnGroups
+DependsOnMethods
+
+alwaysRun
+
+Parameters
+
+Description
+####################################################################################################################
