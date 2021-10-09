@@ -5,7 +5,7 @@ import org.testng.annotations.DataProvider;
 public class DataProviderClassDemo {
 
 	
-	@DataProvider
+	@DataProvider(parallel = true)
 	public static Object[][] dp() {
 
 		return new Object[][] {

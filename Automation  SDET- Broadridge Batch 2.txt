@@ -340,6 +340,8 @@ ExtentTest  - Test & Nodes
 MediaEntityBuilder.createScreenCapture for screenshot attachment
 
 ####################################################################################################################
+03-Oct-2021
+####################################################################################################################
 ####################################################################################################################
 #TESTNG
 #Basic Tags
@@ -412,3 +414,85 @@ Parameters
 
 Description
 ####################################################################################################################
+09-Oct-2021
+####################################################################################################################
+#TESTNG
+#ThreadPool Size
+#Parallel Execution By Test, Methods, CLasses
+#Listeners: ITestListener, ITestSuiteListener, IRetryAnalyzer
+####################################################################################################################
+
+
+
+Parallel By Methods:
+
+Before Methods1:14
+Before Methods1:13
+Before Methods1:15
+Test2 Execution....14
+Test3 Execution....15
+Test1 Execution....13
+After Methods1:15
+After Methods1:14
+Before Methods1:15
+Before Methods2:14
+Test4 Execution....15
+After Methods1:15
+Before Methods2:15
+After Methods1:13
+Before Methods2:13
+Test22 Execution....15
+Test21 Execution....14
+After Methods2:15
+Before Methods2:15
+Test23 Execution....13
+Test24 Execution....15
+After Methods2:14
+After Methods2:13
+After Methods2:15
+
+Parallel By CLasses:
+
+Before Methods2:14
+Before Methods1:13
+Test21 Execution....14
+Test1 Execution....13
+After Methods2:14
+After Methods1:13
+Before Methods1:13
+Before Methods2:14
+Test2 Execution....13
+Test22 Execution....14
+After Methods1:13
+Before Methods1:13
+Test3 Execution....13
+After Methods1:13
+Before Methods1:13
+Test4 Execution....13
+After Methods2:14
+After Methods1:13
+Before Methods2:14
+Test23 Execution....14
+After Methods2:14
+Before Methods2:14
+Test24 Execution....14
+After Methods2:14
+
+TestNg Listeners:
+Listen to events occuring in Testng execution. Based on the status coming from TestNg
+execution, we can execute certain set of code.
+
+
+ITestListeners:
+OnStart:it is called when any test starts just like @BEforeTest
+OnTestStart: it is called each time before test is invoked.
+
+IretryAnalyzer
+
+SKipException
+
+
+####################################################################################################################
+
+
+
