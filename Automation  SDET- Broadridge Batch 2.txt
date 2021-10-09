@@ -413,6 +413,7 @@ alwaysRun
 Parameters
 
 Description
+
 ####################################################################################################################
 09-Oct-2021
 ####################################################################################################################
@@ -420,6 +421,17 @@ Description
 #ThreadPool Size
 #Parallel Execution By Test, Methods, CLasses
 #Listeners: ITestListener, ITestSuiteListener, IRetryAnalyzer
+#ATDD VS TDD VS BDD
+#Agile
+#Scrum Master & Product Owner
+#CI CD CT
+#Insprint Automation
+#PI PLanning
+#Smoke & Sanity & Regression Testing
+#Waterfall model
+#Requirement Specifications
+#DEVOPS
+#DEV + TEST + IT OPS
 ####################################################################################################################
 
 
@@ -493,6 +505,5 @@ SKipException
 
 
 ####################################################################################################################
-
 
 
