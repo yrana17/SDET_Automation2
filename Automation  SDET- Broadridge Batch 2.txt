@@ -505,5 +505,107 @@ SKipException
 
 
 ####################################################################################################################
+#10-10-2021
+####################################################################################################################
+#Cucumber - BDD Framework
+#Gherkin
+#Given, When, Then
+#Hooks
+#Background
+#Features
+#Scenarios
+#Scenario Outline vs Example
+#Tags
+####################################################################################################################
+Cucumber is a tool based on BDD framework. BDD is behavioral Data Driven Framework.
+Bridge between technical & non-tech users.
 
+Gherkin is plain simple english langhuage to define the behavior of our
+bussiness requirement.
+Collaboration.
+
+Feature: ENtry Point for testing. can define what feature you will be testing.
+Scenario: Kind of test cases.
+
+Given :pre condition
+When  :actions or steps to be performed
+Then  :Outcome or result of when conditions
+
+
+Glue COde: That has to be linked to stepdefinitions
+
+
+Scenario Outline is executing same scenario with multiple set of data.
+Example is kind of data table to store test data.
+
+
+
+Background: Its list of step to be executed before each scenario.
+
+
+Hooks:
+
+@BEfore and @After  : They are applicable globally.
+
+Tagged Hooks
+
+Before Hooks > Background > Scenarios > After Hooks
+
+
+
+
+Cucumber Maven Dependencies:
+
+
+<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-jvm-deps</artifactId>
+			<version>1.0.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-jvm</artifactId>
+			<version>1.1.5</version>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-core</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>gherkin</artifactId>
+			<version>2.12.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-html</artifactId>
+			<version>0.2.6</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>3.8.0</version>
+		</dependency>
 
