@@ -1,0 +1,32 @@
+{
+   "users":[
+      {
+         "firstnm":"user1",
+         "lastnm":"last1",
+         "id":1,
+         "courseid":1
+      },
+      {
+         "firstnm":"user2",
+         "lastnm":"last2",
+         "id":2,
+         "courseid":2
+      },
+      {
+         "firstnm":"user3",
+         "lastnm":"last3",
+         "id":3,
+         "courseid":1
+      }
+   ],
+   "courses":[
+      {
+         "name":"ECE",
+         "id":1
+      },
+      {
+         "name":"IT",
+         "id":2
+      }
+   ]
+}

@@ -609,3 +609,44 @@ Cucumber Maven Dependencies:
 			<version>3.8.0</version>
 		</dependency>
 
+####################################################################################################################
+#16-10-2021
+####################################################################################################################
+#API vs Web services
+#REST API
+####################################################################################################################
+GET: Read Data
+PUT: Update(whole)
+POST: Insert
+PATCH: Update(partially update existing resource)
+DELETE:Delete
+
+
+
+<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+
+Https://www.testenv.com
+
+1)POST >   Request Param: USerid:Test, Password: Test@123
+RESPONSE BODY:  ACCESS TOKEN & REFRESH TOKEN
+
+2)REQUEST PARAM: AUTHORIZATION:ACCESSTTOKENKEY
+GET/POST CAll to Application Urls
+
+
+
+
+
+
+####################################################################################################################
