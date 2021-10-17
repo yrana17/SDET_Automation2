@@ -645,8 +645,44 @@ RESPONSE BODY:  ACCESS TOKEN & REFRESH TOKEN
 GET/POST CAll to Application Urls
 
 
+####################################################################################################################
+#17/10/2021
+####################################################################################################################
+#Model CLass
+#Framework
+####################################################################################################################
+####################################################################################################################
+Model class
+It is used to model data in your application. kind of mirroring of your data from your JSON.
 
+Framework
 
+Create Utilities:
+1.SeleniumUtil
+LaunchBrowser
+OpenApp
+Click
+Type
+Screenshots
+SelectDropdown
+FIndWebElement
+FIndWebElements
+WindowHandling
+AlertHandling
+TableRowCount
+TableColumnCount
+TableHeaderData
+TableBodyData
+Screenshots
+ImplicitlyWait
+Clear
+IsEnabled/Displayed/Selected
+MouseHover
+DoubleCLick
+CloseBrowser
+QuitBrowser
+RefreshPage
+GetTitle/Url/Attributes
 
 
 ####################################################################################################################
