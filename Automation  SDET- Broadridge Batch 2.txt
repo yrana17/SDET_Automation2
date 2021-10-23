@@ -685,4 +685,41 @@ RefreshPage
 GetTitle/Url/Attributes
 
 
+
+xpath=//*[@id='user']
+
+
+####################################################################################################################
+####################################################################################################################
+#Date: 23-10-2021
+####################################################################################################################
+#Frameworks
+#Utilities
+####################################################################################################################
+
+
+DataTypeConversionUtil
+
+ConvertStringToOthers  : int,float,double,boolean,long
+ConvertOthyersToString : 
+ConvertIntToLong
+ConvertLongToInt
+Convert IntToDouble
+ConvertLongToDouble
+ConvertCharToInt
+
+
+StringUtils
+
+chkLengthRange
+chkEmptyData
+chkcasesensitivity
+chkdigits
+getsubbstring
+strlength
+chkStringcontainsSubstrings
+removingmultiplespaces
+compareTwostring
+convertStringtochararray
+getsubstringlastoccurenceinstring
 ####################################################################################################################
